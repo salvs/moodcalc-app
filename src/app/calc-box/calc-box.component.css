@@ -1,0 +1,39 @@
+.mainbox {
+	float: left;
+	background-color: #CFD8DC !important;
+	width: 32em;
+	position: relative;
+	left: 15em;
+}
+
+.tile{
+	float: left;
+	position: relative;
+	color: black;
+	left: 1em;
+	padding: 1em;
+	border-radius: 4px;
+	width: 5em;
+	background-color: #2b508c;
+	margin: 0.2em;
+	font-family: arial, helvetica, sans-serif;
+	color: #4286f4;	
+}
+
+.result{
+	float: left;
+	position: relative;
+	color: black;
+	left: 1em;
+	padding: 1em;
+	border-radius: 4px;
+	width: 26em;
+	background-color: #798dad;
+	margin: 0.2em;
+	font-family: arial, helvetica, sans-serif;
+	color: #000816;	
+}
+
+.selected{
+	background-color: #30405b;
+}
