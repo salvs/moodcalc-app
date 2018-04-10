@@ -1,0 +1,43 @@
+.box{
+	width: 5em;
+	float: left;
+	background-color: #272260;
+	color: white;
+    border: 1px solid grey;  
+    line-height: 1em;
+}
+.ybox{
+	width: 5em;
+	float: left;
+	background-color: #300022;
+	color: grey;
+    border: 1px solid #73AD21;  
+    line-height: 1em;
+}
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: black;
+}
+
+.box .hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+
+
+.largeBox{
+	left: 70px;
+	top: 30px;
+	width: 22em;
+	float: left;
+	background-color: #31548c;
+	line-height: 1em;
+	position: relative;
+	padding: 0.1em 0.1em 0.1em;
+}
+
+.text {
+	width: 15em;
+}

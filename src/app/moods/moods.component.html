@@ -1,0 +1,47 @@
+<!--
+
+draw box
+Results
+
+c     /
+7 8 9 x
+4 5 6 -
+1 2 3 +
++ 0 . =
+
+-->
+
+
+
+<div class="largeBox">
+<div>
+	<span>
+		<input [(ngModel)] = "result" >	
+	</span>
+</div>
+	<div class="box" [class.selected]="tiles[0] === selectedTile" (click)="onSelect(tiles[0])"><span>{{tiles[0].name}}</span></div>
+	<div class="box" [class.selected]="tiles[1] === selectedTile" (click)="onSelect(tiles[1])">{{tiles[1].name}}</div>
+	<div class="box" [class.selected]="tiles[2] === selectedTile" (click)="onSelect(tiles[2])">{{tiles[2].name}}</div>
+	<div class="ybox" [class.selected]="tiles[3] === selectedTile" (click)="onSelect(tiles[3])">{{tiles[3].name}}</div>
+	
+	<div class="box" [class.selected]="tiles[4] === selectedTile" (click)="onSelect(tiles[4])">{{tiles[4].name}}</div>
+	<div class="box" [class.selected]="tiles[5] === selectedTile" (click)="onSelect(tiles[5])">{{tiles[5].name}}</div>
+	<div class="box" [class.selected]="tiles[6] === selectedTile" (click)="onSelect(tiles[6])">{{tiles[6].name}}</div>
+	<div class="ybox" [class.selected]="tiles[7] === selectedTile" (click)="onSelect(tiles[7])">{{tiles[7].name}}</div>
+	
+	
+	<div class="box" [class.selected]="tiles[8] === selectedTile" (click)="onSelect(tiles[8])">{{tiles[8].name}}</div>
+	<div class="box" [class.selected]="tiles[9] === selectedTile" (click)="onSelect(tiles[9])">{{tiles[9].name}}</div>
+	<div class="box" [class.selected]="tiles[10] === selectedTile" (click)="onSelect(tiles[10])">{{tiles[10].name}}</div>
+	<div class="ybox" [class.selected]="tiles[11] === selectedTile" (click)="onSelect(tiles[11])">{{tiles[11].name}}</div>
+	
+	
+	<div class="ybox" [class.selected]="tiles[12] === selectedTile" (click)="onSelect(tiles[12])">{{tiles[12].name}}</div>
+	<div class="box" [class.selected]="tiles[13] === selectedTile" (click)="onSelect(tiles[13])">{{tiles[13].name}}</div>
+	<div class="ybox" [class.selected]="tiles[14] === selectedTile" (click)="onSelect(tiles[14])">{{tiles[14].name}}</div>
+	<div class="ybox" [class.selected]="tiles[15] === selectedTile" (click)="calcEquals()">{{tiles[15].name}}</div>
+
+</div>
+
+
+
