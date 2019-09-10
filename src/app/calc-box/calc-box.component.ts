@@ -12,40 +12,40 @@ export class CalcBoxComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
-
   result: string = '';
   total: number = 0;
   inp: string = '';
   lastInput: string = '';
+  fullText: string = '';
+  fullMap : Map <string, string>;
+  
+  ngOnInit() {}
+
+  
 
   onSelect(num: string): void {
-    this.calc(num);
-  }
-
-  calc = function(num: string) {
-    if (num === 'a') {
-      this.add(num);
-      this.lastInput = 'a';
-    } else if (num === 'e') {
-      this.display();
-      this.lastInput = 'e';
-    } else if (num === 'c') {
-      this.clear();
-    } else {
-      this.inp = this.inp + '' + num;
-      this.result = this.inp;
-    }
+    this.fullText = this.fullText + num;
+    this.result = this.fullText;
+    
   };
 
-  add = function(num: string) {
-    this.total = this.total + parseInt(this.inp);
-    this.result = '' + this.total;
-    this.inp = '';
+  add = function() {
+    this.fullMap.put('test','2');
+    this.fullText = this.fullText + '+';
+    this.result = this.fullText;
+  };
+  subtract = function(num: string) {
+    this.fullText = this.fullText + '-';
+    this.result = this.fullText;
   };
 
   clear = function() {
     this.result = '';
+    this.total = 0;
+    this.inp = '';
+    this.lastInput = '';
+  };
+  clearRunningTotals = function() {
     this.total = 0;
     this.inp = '';
     this.lastInput = '';
@@ -62,11 +62,10 @@ export class CalcBoxComponent implements OnInit {
     this.inp = '';
   };
 
-  computeFinal = function(num: string) {
-    if (this.lastInput == 'a') {
-      console.log('last input was add');
-      this.total = this.total + parseInt(this.inp);
-    }
+  computeFinal = function() {
+    console.log(this.fullText);
+    
+    
   }
 
 
